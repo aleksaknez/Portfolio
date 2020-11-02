@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aleksa Knezevic</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<meta charset="utf-8"/> 
+</head>
+<body>
+		<!-- zaglavlje -->
+		<div id="heder">
+			<div class="okvir">
+				<div id="logo">
+					<a href="index.html" title="Pocetna strana">
+						<img src="slike/logo.png" alt="Logo"/>
+					</a>
+				</div>
+				<div id="navigacija">
+					<button id="dugme">Menu	</button>
+					<ul>
+						<li><a href="index.html">Početna</a></li>
+						<li><a href="biografija.html">Biografija</a></li>
+						<li><a href="hobi.html">Hobi</a></li>
+						<li class="aktivanLink"><a href="galerija.html">Galerija</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				<div class="cistac"></div>
+			</div>
+		</div>
+		<!--// zaglavlje -->
+
+				<section id="slajder">
+					<article id="slajderTekst">
+						<header>
+							<h1>Galerija</h1>
+						</header>
+						<p>&nbsp;</p>
+					</article>
+				</section>
+			<div class="cistac"></div>
+			
+			<div id="galerija"> 	
+				<div class="okvir">		
+					  <div class="glavnaSlika">
+						<img src="slike/slika1.jpg" alt="moje slike" id="trenutna">
+					  </div>
+					  <div class="slike">
+						<img src="slike/slika1.jpg" alt="Ana i ja">
+						<img src="slike/slika2.jpg" alt="Bozic Ana i ja">
+						<img src="slike/slika3.jpg" alt="Skola slika">
+						<img src="slike/slika4.jpg" alt="Peca i ja">
+						<img src="slike/slika5.jpg" alt="Kafic u bgu">
+						<img src="slike/slika6.jpg" alt="skijanje">
+						<img src="slike/slika7.jpg" alt="Nica slika">
+						<img src="slike/slika8.jpg" alt="Milica i ja">
+					</div>
+				</div>
+			</div>
+				<!-- ovaj deo koda u script tagu nije moj vec je nadjen na internetu i prilagodjen mojoj stranici-->
+				<script type="text/javascript">
+					var trenutna = document.querySelector('#trenutna');
+					var slike = document.querySelector('.slike');
+					var slika = document.querySelectorAll('.slike img');
+					var opacity = 0.6;
+					window.onload = (function() {
+					slika[0].style.opacity = opacity;
+					slike.addEventListener('click', slikaClick);
+					function slikaClick(e) {
+					  slika.forEach(img => (img.style.opacity = 1));
+					  trenutna.src = e.target.src;
+					  e.target.style.opacity = opacity;
+							}
+						});			
+				</script>
+				
+				
+				<div id="futer">
+			<div class="okvir">
+				<div id="potpis">
+					<p>Aleksa Knezevic NRT-19/17</p>
+				</div>
+				<div id="social-network">
+					<ul>
+							<li><a href="http://www.facebook.com"><img src="slike/fb.jpg" /></a></li>
+						<li><a href="http://www.twitter.com"><img src="slike/tw.jpg" /></a></li>
+						<li><a href="http://www.google.com"><img src="slike/gp.jpg" /></a></li>
+						<li><a href="http://www.pinterest.com"><img src="slike/pt.jpg" /></a></li>
+					</ul>
+				</div>
+				<div class="cistac"></div>
+			</div>
+		</div>
+</body>
+</html>

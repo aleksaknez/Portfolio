@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aleksa Knezevic</title>
+	<link type="text/css" rel="stylesheet" href="css/kontaktbg.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<meta charset="utf-8"/> 
+	 <script src="forma.js"></script>
+</head>
+<body> 
+		<!-- zaglavlje -->
+		<div id="heder">
+			<div class="okvir">
+				<div id="logo">
+					<a href="index.html" title="Pocetna strana">
+						<img src="slike/logo.png" alt="Logo"/>
+					</a>
+				</div>
+				<div id="navigacija">
+					<button id="dugme">Menu	</button>
+					<ul>
+						<li><a href="index.html">Početna</a></li>
+						<li><a href="biografija.html">Biografija</a></li>
+						<li><a href="hobi.html">Hobi</a></li>
+						<li><a href="galerija.html">Galerija</a></li>
+						<li class="aktivanLink"><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				<div class="cistac"></div>
+			</div>
+		</div>
+<div class= "okvir">
+	<div class="kontaktforma" > 
+		<br><br>
+		<h1>Kontaktirajte me!</h1>	
+ 		<form id="forma" name="forma">
+   			 <label for="ime" >Ime</label><br>
+    			<input size = "25"  type="text" id="ime" placeholder="Unesite Vaše ime">
+    			<span id="greskaIme"></span>
+			<br>
+    		<label for="prezime">Prezime</label><br>
+    			<input  size = "25"  type="text"  id="prezime"  placeholder="Unesite Vaše prezime" >
+    			<span id="greskaPrezime"></span>
+			<br>
+    		<label for="mail">E-mail adresa</label><br>
+    			<input size = "25" type="email" id="mail"  placeholder="Unesite Vašu e-mail adresu">
+    			<span id="greskaEmail"></span>
+			<br>
+    		<label for="tel">Telefon (upišite u formatu 06X/XXXXXXX)</label><br>
+    			<input size = "25" type="tel" id="tel"   placeholder="Unesite broj telefona"  >
+    			<span id="greskaTel"></span>
+			<br>
+   			 <label for="poruka">Poruka</label><br>
+   				 <textarea  id="poruka" name="poruka" placeholder="Upišite svoju poruku..." rows="5" cols="27"></textarea>
+			<br><br>   			
+   			 <input type="button" class="btn" onclick="slanje()" value="Pošalji"/>		 
+  		</form>
+  		<br><br><br><br><br><br>
+	  </div>
+	</div>
+				<div id="futer">
+			<div class="okvir">
+				<div id="potpis">
+					<p>Aleksa Knezevic NRT-19/17 </p>
+				</div>
+				<div id="social-network">
+					<ul>
+						<li><a href="http://www.facebook.com"><img src="slike/fb.jpg" /></a></li>
+						<li><a href="http://www.twitter.com"><img src="slike/tw.jpg" /></a></li>
+						<li><a href="http://www.google.com"><img src="slike/gp.jpg" /></a></li>
+						<li><a href="http://www.pinterest.com"><img src="slike/pt.jpg" /></a></li>
+					</ul>
+				</div>
+				<div class="cistac"></div>
+			</div>
+		</div>
+		</body>
+</html>
